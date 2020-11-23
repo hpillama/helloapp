@@ -1,0 +1,14 @@
+#base image
+FROM node:alpine
+
+# Copy build files
+COPY ./ ./
+
+#install dependancies
+RUN npm install
+
+#startup command
+CMD ["npm", "start"]
+
+
+
