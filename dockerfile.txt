@@ -1,5 +1,5 @@
 #base image
-FROM node:alpine
+FROM node:lts-alpine
 
 # Copy build files
 COPY ./ ./
@@ -9,6 +9,8 @@ RUN npm install
 
 #startup command
 CMD ["npm", "start"]
+
+
 
 
 
